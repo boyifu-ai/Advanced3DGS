@@ -29,6 +29,15 @@ This is the official code repository for **"Advances in Rasterization Rendering 
 - [ ] HAC++ (TPAMI 2025)
 - [ ] RadSplat (ECCV 2024)
 
+## Third-party source repositories:
+| Method | Project Local path | Upstream repository |
+| --- | --- | --- |
+| vanilla 3DGS | `third_party/gaussian-splatting` | `https://github.com/graphdeco-inria/gaussian-splatting` |
+| 2DGS | `third_party/2d-gaussian-splatting` | `https://github.com/hbb1/2d-gaussian-splatting` |
+| 3DGS-MCMC | `third_party/3dgs-mcmc` | `https://github.com/ubc-vision/3dgs-mcmc` |
+| 3D-HGS | `third_party/3DHGS` | `https://github.com/lihaolin88/3DHGS` |
+| 3D-SSS | `third_party/3D-student-splatting-and-scooping` | `https://github.com/realcrane/3D-student-splatting-and-scooping` |
+
 ## Supported Datasets
 - [x] Mip-NeRF 360
 - [x] Tanks & Temples

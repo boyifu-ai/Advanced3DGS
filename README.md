@@ -1,4 +1,4 @@
-# Advanced3DGS - A Unified 3DGS Framework
+# Advanced3DGS: A Unified 3DGS Framework
 This is the official code repository for **"Advances in Rasterization Rendering Algorithms for 3D Gaussian Splatting: A Comprehensive Survey"**. A unified framework for reproducing, benchmarking, and comparing state-of-the-art (SOTA) 3DGS methods under a common training, rendering, and evaluation pipeline.
 
 ## TO DO LIST

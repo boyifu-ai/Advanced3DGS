@@ -29,7 +29,7 @@ This is the official code repository for **"Advances in Rasterization Rendering 
 - [ ] HAC++ (TPAMI 2025)
 - [ ] RadSplat (ECCV 2024)
 
-## Third-party source repositories:
+## Third-party Source Repositories
 | Method | Upstream repository |
 | --- | --- |
 | Vanilla 3DGS | `https://github.com/graphdeco-inria/gaussian-splatting` |

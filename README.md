@@ -44,7 +44,6 @@ This is the official code repository for **"Advances in Rasterization Rendering 
 | GHAP | `https://github.com/taowang0105/GHAP` |
 | DashGaussian | `https://github.com/YouyuChen0207/DashGaussian` |
 | FastGS | `https://github.com/fastgs/FastGS` |
-| MMGS | `No public repository confirmed; paper recorded` |
 | GOF / Gaussian Opacity Fields | `https://github.com/autonomousvision/gaussian-opacity-fields` |
 | PGSR | `https://github.com/zju3dv/PGSR` |
 | Mip-Splatting | `https://github.com/autonomousvision/mip-splatting` |

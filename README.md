@@ -35,6 +35,25 @@ This is the official code repository for **"Advances in Rasterization Rendering 
 | 3DGS-MCMC | `https://github.com/ubc-vision/3dgs-mcmc` |
 | 3D-HGS | `https://github.com/lihaolin88/3DHGS` |
 | 3D-SSS | `https://github.com/realcrane/3D-student-splatting-and-scooping` |
+| GES | `https://github.com/ajhamdi/ges-splatting` |
+| BetaSplatting | `https://github.com/RongLiu-Leo/Beta-Splatting` |
+| LightGaussian | `https://github.com/VITA-Group/LightGaussian` |
+| Mini-Splatting | `https://github.com/fatPeter/mini-splatting` |
+| Speedy-Splat | `https://github.com/j-alex-hanson/speedy-splat` |
+| Taming-3DGS | `https://github.com/humansensinglab/taming-3dgs` |
+| GHAP | `https://github.com/taowang0105/GHAP` |
+| DashGaussian | `https://github.com/YouyuChen0207/DashGaussian` |
+| FastGS | `https://github.com/fastgs/FastGS` |
+| MMGS | `No public repository confirmed; paper recorded` |
+| GOF / Gaussian Opacity Fields | `https://github.com/autonomousvision/gaussian-opacity-fields` |
+| PGSR | `https://github.com/zju3dv/PGSR` |
+| Mip-Splatting | `https://github.com/autonomousvision/mip-splatting` |
+| Scaffold-GS | `https://github.com/city-super/Scaffold-GS` |
+| Octree-GS | `https://github.com/city-super/Octree-GS` |
+| Wavelet-GS | `https://github.com/ALEX5874/Wavelet-GS` |
+| Compact-3DGS | `https://github.com/maincold2/Compact-3DGS` |
+| ContextGS | `https://github.com/wyf0912/ContextGS` |
+| HAC++ | https://github.com/YihangChen-ee/HAC-plus |
 
 ## Supported Datasets
 - [x] Mip-NeRF 360

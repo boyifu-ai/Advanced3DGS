@@ -27,7 +27,6 @@ This is the official code repository for **"Advances in Rasterization Rendering 
 - [ ] ContextGS (NeurIPS 2024)
 - [ ] FreGS (CVPR 2024)
 - [ ] HAC++ (TPAMI 2025)
-- [ ] RadSplat (ECCV 2024)
 
 ## Third-party Source Repositories
 | Method | Upstream repository |

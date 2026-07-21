@@ -1,0 +1,40 @@
+[
+  {
+    "key": "mip360",
+    "title": "MipNeRF360, 7 benchmark scenes",
+    "env_var": "ADVANCED3DGS_MIP360_ROOT",
+    "default_root": "datasets/MIP360",
+    "scenes": [
+      "bicycle",
+      "bonsai",
+      "counter",
+      "garden",
+      "kitchen",
+      "room",
+      "stump"
+    ],
+    "acceptance_scene": "garden"
+  },
+  {
+    "key": "tandt",
+    "title": "Tanks and Temples, 2 scenes",
+    "env_var": "ADVANCED3DGS_TANDT_ROOT",
+    "default_root": "datasets/tandt",
+    "scenes": [
+      "train",
+      "truck"
+    ],
+    "acceptance_scene": "train"
+  },
+  {
+    "key": "deep_blending",
+    "title": "Deep Blending, 2 scenes",
+    "env_var": "ADVANCED3DGS_DEEP_BLENDING_ROOT",
+    "default_root": "datasets/deep_blending",
+    "scenes": [
+      "drjohnson",
+      "playroom"
+    ],
+    "acceptance_scene": "drjohnson"
+  }
+]

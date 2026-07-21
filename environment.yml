@@ -1,0 +1,32 @@
+name: unified-3dgs
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pytorch=2.0.0
+  - torchvision=0.15.0
+  - torchaudio=2.0.0
+  - pytorch-cuda=11.8
+  - numpy=1.24
+  - scipy
+  - pillow
+  - cmake
+  - ninja
+  - setuptools
+  - wheel
+  - pip:
+      - PyYAML>=6.0
+      - plyfile
+      - tqdm
+      - opencv-python-headless
+      - matplotlib
+      - imageio
+      - scikit-image
+      - lpips
+      - mediapy==1.1.2
+      - open3d-cpu==0.18.0
+      - trimesh==4.3.2

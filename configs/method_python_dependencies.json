@@ -1,0 +1,265 @@
+[
+  {
+    "key": "beta_splatting",
+    "packages": [
+      "matplotlib",
+      "scipy",
+      "splines==0.3.3",
+      "jaxtyping",
+      {
+        "requirement": "nerfview==0.1.3",
+        "import_name": "nerfview",
+        "install_dependencies": true
+      },
+      "kornia-rs==0.1.0",
+      "kornia==0.7.3",
+      {
+        "requirement": "lapjv==1.3.27",
+        "import_name": "lapjv",
+        "no_build_isolation": true
+      },
+      {
+        "requirement": "git+https://github.com/fraunhoferhhi/PLAS.git@main",
+        "import_name": "plas",
+        "version_requirement": "",
+        "no_build_isolation": true,
+        "require_isolated": true,
+        "allow_moving_ref": true,
+        "moving_ref_reason": "Upstream PLAS currently publishes no release tag; the installer records the resolved commit in python_dependency_report.json"
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "compact_3dgs",
+    "packages": [
+      "dahuffman",
+      "einops>=0.6.0",
+      "frozendict",
+      "einx",
+      "vector-quantize-pytorch",
+      {
+        "requirement": "git+https://github.com/NVlabs/tiny-cuda-nn.git@v1.6#subdirectory=bindings/torch",
+        "import_name": "tinycudann",
+        "version_requirement": "",
+        "no_build_isolation": true,
+        "require_isolated": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "contextgs",
+    "packages": [
+      "colorama",
+      "compressai",
+      "einops>=0.6.0",
+      "pybind11>=2.6.0",
+      "pytorch-msssim",
+      "tomli>=2.2.1",
+      "torch-geometric==2.3.1",
+      "torchac",
+      "protobuf<5",
+      {
+        "requirement": "wandb==0.16.6",
+        "import_name": "wandb",
+        "install_dependencies": true
+      },
+      {
+        "requirement": "torch_scatter",
+        "import_name": "torch_scatter",
+        "find_links": "https://data.pyg.org/whl/torch-2.0.0+cu118.html",
+        "only_binary": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "3dcs",
+    "packages": [],
+    "manual_blockers": [
+      "Uses an official isolated backend from third_party/convex-splatting/requirements.yaml; run bash scripts/setup_3dcs_official_backend.sh instead of installing into unified-3dgs."
+    ]
+  },
+  {
+    "key": "dashgaussian",
+    "packages": [],
+    "manual_blockers": []
+  },
+  {
+    "key": "fastgs",
+    "packages": ["websockets"],
+    "manual_blockers": []
+  },
+  {
+    "key": "ges",
+    "packages": [
+      "einops>=0.6.0",
+      "pyglet",
+      "protobuf<5",
+      {
+        "requirement": "wandb==0.16.6",
+        "import_name": "wandb",
+        "install_dependencies": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "ghap",
+    "packages": [
+      {"requirement": "portalocker==2.10.1", "import_name": "portalocker"},
+      {"requirement": "iopath==0.1.10", "import_name": "iopath"},
+      {"requirement": "yacs==0.1.8", "import_name": "yacs"},
+      {"requirement": "termcolor==2.4.0", "import_name": "termcolor"},
+      {"requirement": "tabulate==0.9.0", "import_name": "tabulate"},
+      {"requirement": "fvcore==0.1.5.post20221221", "import_name": "fvcore"},
+      {
+        "requirement": "git+https://github.com/facebookresearch/pytorch3d.git@v0.7.4",
+        "import_name": "pytorch3d",
+        "version_requirement": "pytorch3d==0.7.4",
+        "no_build_isolation": true,
+        "require_isolated": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "gof",
+    "packages": ["einops>=0.6.0"],
+    "manual_blockers": []
+  },
+  {
+    "key": "hac_plus",
+    "packages": [
+      "colorama",
+      "einops>=0.6.0",
+      "protobuf<5",
+      {
+        "requirement": "wandb==0.16.6",
+        "import_name": "wandb",
+        "install_dependencies": true
+      },
+      {
+        "requirement": "torch_scatter",
+        "import_name": "torch_scatter",
+        "find_links": "https://data.pyg.org/whl/torch-2.0.0+cu118.html",
+        "only_binary": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "lightgaussian",
+    "packages": ["colorama", "icecream"],
+    "manual_blockers": []
+  },
+  {
+    "key": "mini_splatting",
+    "packages": [],
+    "manual_blockers": []
+  },
+  {
+    "key": "mip_splatting",
+    "packages": [],
+    "manual_blockers": []
+  },
+  {
+    "key": "octree_gs",
+    "packages": [
+      "colorama",
+      "einops>=0.6.0",
+      "jaxtyping",
+      "typeguard>=2.13.3,<3",
+      "laspy",
+      "protobuf<5",
+      {
+        "requirement": "wandb==0.16.6",
+        "import_name": "wandb",
+        "install_dependencies": true
+      },
+      {
+        "requirement": "torch_scatter",
+        "import_name": "torch_scatter",
+        "find_links": "https://data.pyg.org/whl/torch-2.0.0+cu118.html",
+        "only_binary": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "pgsr",
+    "packages": [
+      {"requirement": "portalocker==2.10.1", "import_name": "portalocker"},
+      {"requirement": "iopath==0.1.10", "import_name": "iopath"},
+      {"requirement": "yacs==0.1.8", "import_name": "yacs"},
+      {"requirement": "termcolor==2.4.0", "import_name": "termcolor"},
+      {"requirement": "tabulate==0.9.0", "import_name": "tabulate"},
+      {"requirement": "fvcore==0.1.5.post20221221", "import_name": "fvcore"},
+      {
+        "requirement": "git+https://github.com/facebookresearch/pytorch3d.git@v0.7.4",
+        "import_name": "pytorch3d",
+        "version_requirement": "pytorch3d==0.7.4",
+        "no_build_isolation": true,
+        "require_isolated": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "scaffold_gs",
+    "packages": [
+      "colorama",
+      "einops>=0.6.0",
+      "jaxtyping",
+      "typeguard>=2.13.3,<3",
+      "laspy",
+      "protobuf<5",
+      {
+        "requirement": "wandb==0.16.6",
+        "import_name": "wandb",
+        "install_dependencies": true
+      },
+      {
+        "requirement": "torch_scatter",
+        "import_name": "torch_scatter",
+        "find_links": "https://data.pyg.org/whl/torch-2.0.0+cu118.html",
+        "only_binary": true
+      }
+    ],
+    "manual_blockers": []
+  },
+  {
+    "key": "speedy_splat",
+    "packages": [],
+    "manual_blockers": []
+  },
+  {
+    "key": "taming_3dgs",
+    "packages": ["websockets"],
+    "manual_blockers": []
+  },
+  {
+    "key": "wavelet_gs",
+    "packages": [
+      "colorama",
+      "einops>=0.6.0",
+      "jaxtyping",
+      "typeguard>=2.13.3,<3",
+      "laspy",
+      "protobuf<5",
+      {
+        "requirement": "wandb==0.16.6",
+        "import_name": "wandb",
+        "install_dependencies": true
+      },
+      {
+        "requirement": "torch_scatter",
+        "import_name": "torch_scatter",
+        "find_links": "https://data.pyg.org/whl/torch-2.0.0+cu118.html",
+        "only_binary": true
+      }
+    ],
+    "manual_blockers": []
+  }
+]

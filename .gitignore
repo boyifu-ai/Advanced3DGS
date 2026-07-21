@@ -1,0 +1,53 @@
+__pycache__/
+*.pyc
+
+.venv/
+venv/
+envs/
+.env
+configs/local_dataset_paths.json
+
+# Maintainer-only documentation is not part of the public release.
+/docs/
+
+data/
+datasets/
+Advanced3DGS-Datasets/
+TrainingData/
+archives/
+
+outputs/*
+!outputs/.gitkeep
+runs/
+logs/
+checkpoints/
+
+# Unregistered repository copies stay ignored. Release tooling adds validated
+# repositories explicitly as pinned submodules with `git submodule add -f`.
+third_party/*
+!third_party/README.md
+!third_party/.gitkeep
+
+third_party_build/*
+!third_party_build/README.md
+!third_party_build/.gitkeep
+
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.zip
+*.tar
+*.tar.gz
+*.log
+*.tmp
+server_env_report_*.log
+unified_3dgs_write_test_*.tmp
+
+# Local source-audit and inaccessible temporary directories.
+/.agents/
+/.mcmc_upstream_audit/
+/.sss_upstream_audit/
+/.vanilla_upstream_audit/
+/tmpq6mfv6tw/
+/.codex_tmp/

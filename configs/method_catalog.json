@@ -1,0 +1,191 @@
+[
+  {
+    "key": "ges",
+    "title": "GES",
+    "venue": "CVPR 2024",
+    "local_path": "third_party/ges-splatting",
+    "repository": "https://github.com/ajhamdi/ges-splatting.git",
+    "project_page": "https://abdullahamdi.com/ges",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "beta_splatting",
+    "title": "BetaSplatting",
+    "venue": "SIGGRAPH 2025",
+    "local_path": "third_party/Beta-Splatting",
+    "repository": "https://github.com/RongLiu-Leo/Beta-Splatting.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "lightgaussian",
+    "title": "LightGaussian",
+    "venue": "NeurIPS 2024",
+    "local_path": "third_party/LightGaussian",
+    "repository": "https://github.com/VITA-Group/LightGaussian.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "mini_splatting",
+    "title": "Mini-Splatting",
+    "venue": "ECCV 2024",
+    "local_path": "third_party/mini-splatting",
+    "repository": "https://github.com/fatPeter/mini-splatting.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "speedy_splat",
+    "title": "Speedy-Splat",
+    "venue": "CVPR 2025",
+    "local_path": "third_party/speedy-splat",
+    "repository": "https://github.com/j-alex-hanson/speedy-splat.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "taming_3dgs",
+    "title": "Taming-3DGS",
+    "venue": "SIGGRAPH Asia 2024",
+    "local_path": "third_party/taming-3dgs",
+    "repository": "https://github.com/humansensinglab/taming-3dgs.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "ghap",
+    "title": "GHAP",
+    "venue": "NeurIPS 2025",
+    "local_path": "third_party/GHAP",
+    "repository": "https://github.com/taowang0105/GHAP.git",
+    "project_page": "https://qesal.github.io/ghap/",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "dashgaussian",
+    "title": "DashGaussian",
+    "venue": "CVPR 2025",
+    "local_path": "third_party/DashGaussian",
+    "repository": "https://github.com/YouyuChen0207/DashGaussian.git",
+    "project_page": "https://dashgaussian.github.io/",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "fastgs",
+    "title": "FastGS",
+    "venue": "CVPR 2026",
+    "local_path": "third_party/FastGS",
+    "repository": "https://github.com/fastgs/FastGS.git",
+    "project_page": "https://fastgs.github.io/",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "mmgs",
+    "title": "MMGS",
+    "venue": "arXiv 2026",
+    "local_path": "third_party/MMGS",
+    "repository": "",
+    "project_page": "https://arxiv.org/abs/2605.19304",
+    "source_status": "paper_only"
+  },
+  {
+    "key": "gof",
+    "title": "GOF / Gaussian Opacity Fields",
+    "venue": "SIGGRAPH Asia 2024",
+    "local_path": "third_party/gaussian-opacity-fields",
+    "repository": "https://github.com/autonomousvision/gaussian-opacity-fields.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "pgsr",
+    "title": "PGSR",
+    "venue": "TVCG 2024",
+    "local_path": "third_party/PGSR",
+    "repository": "https://github.com/zju3dv/PGSR.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "mip_splatting",
+    "title": "Mip-Splatting",
+    "venue": "CVPR 2024",
+    "local_path": "third_party/mip-splatting",
+    "repository": "https://github.com/autonomousvision/mip-splatting.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "scaffold_gs",
+    "title": "Scaffold-GS",
+    "venue": "CVPR 2024",
+    "local_path": "third_party/Scaffold-GS",
+    "repository": "https://github.com/city-super/Scaffold-GS.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "octree_gs",
+    "title": "Octree-GS",
+    "venue": "TPAMI 2025",
+    "local_path": "third_party/Octree-GS",
+    "repository": "https://github.com/city-super/Octree-GS.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "wavelet_gs",
+    "title": "Wavelet-GS",
+    "venue": "ACM MM 2025",
+    "local_path": "third_party/Wavelet-GS",
+    "repository": "https://github.com/ALEX5874/Wavelet-GS.git",
+    "project_page": "https://rtchennt.github.io/Wavelet-GS/",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "compact_3dgs",
+    "title": "Compact-3DGS",
+    "venue": "CVPR 2024",
+    "local_path": "third_party/Compact-3DGS",
+    "repository": "https://github.com/maincold2/Compact-3DGS.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "3dcs",
+    "title": "3DCS / Convex Splatting",
+    "venue": "CVPR 2025",
+    "local_path": "third_party/convex-splatting",
+    "repository": "https://github.com/convexsplatting/convex-splatting.git",
+    "project_page": "https://convexsplatting.github.io/",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "contextgs",
+    "title": "ContextGS",
+    "venue": "NeurIPS 2024",
+    "local_path": "third_party/ContextGS",
+    "repository": "https://github.com/wyf0912/ContextGS.git",
+    "project_page": "",
+    "source_status": "confirmed"
+  },
+  {
+    "key": "fregs",
+    "title": "FreGS",
+    "venue": "CVPR 2024",
+    "local_path": "third_party/FreGS",
+    "repository": "",
+    "project_page": "https://rover-xingyu.github.io/FreGS_web/",
+    "source_status": "project_page_only"
+  },
+  {
+    "key": "hac_plus",
+    "title": "HAC++",
+    "venue": "TPAMI 2025",
+    "local_path": "third_party/HAC-plus",
+    "repository": "https://github.com/YihangChen-ee/HAC-plus.git",
+    "project_page": "https://yihangchen-ee.github.io/project_hacplus/",
+    "source_status": "confirmed"
+  }
+]

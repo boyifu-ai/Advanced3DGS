@@ -1,0 +1,16 @@
+﻿# Shared user-facing training defaults for confirmed methods.
+# Their formal training interface accepts configurable iteration budgets.
+# Real iteration=1 runs are the fast acceptance test for this same interface.
+iterations: 30000
+resolution: -1
+# Keep the held-out evaluation split enabled for metrics-producing workflows.
+# Shared LPIPS/VGG dependencies are prepared before any acceptance training.
+eval: true
+timeout_seconds: 0
+heartbeat_seconds: 30
+validation_root: outputs/validation
+min_free_disk_gb: 5
+min_free_vram_gb: 4
+cuda_home: /usr/local/cuda-11.8
+torch_cuda_arch_list: "8.6"
+max_jobs: 8

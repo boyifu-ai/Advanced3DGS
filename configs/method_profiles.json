@@ -1,0 +1,164 @@
+[
+  {
+    "key": "ges",
+    "entry_candidates": ["train_ges.py", "train_gaussian.py"],
+    "official_metrics_style": "standard_3dgs",
+    "extra_args": ["--nowandb"],
+    "output_globs": ["{output}_*"]
+  },
+  {
+    "key": "beta_splatting",
+    "entry_candidates": ["train.py"],
+    "official_metrics_style": "beta_splatting",
+    "framework_render_entry": "scripts/render_beta_splatting.py",
+    "stop_after_verified_save": true,
+    "stop_after_verified_save_reason": "upstream continues a fixed longer schedule and persistent viewer after saving iteration 1",
+    "external_extensions": [
+      {
+        "path": "third_party/gaussian-splatting/submodules/fused-ssim",
+        "modules": ["fused_ssim", "fused_ssim_cuda"]
+      }
+    ]
+  },
+  {"key": "lightgaussian", "entry_candidates": ["train_densify_prune.py", "train.py"], "official_metrics_style": "standard_3dgs"},
+  {
+    "key": "mini_splatting",
+    "official_metrics_style": "standard_3dgs",
+    "entry_candidates": ["ms/train.py", "ms_d/train.py"],
+    "framework_render_entry": "scripts/render_mini_splatting.py",
+    "framework_render_contracts": [
+      {"path": "render.py", "contains": ["def render_sets", "GaussianModel(dataset.sh_degree)"]},
+      {"path": "ms/train.py", "contains": ["GaussianModel(sh_degree=0)", "scene.save(iteration)"]}
+    ],
+    "extension_prefixes": ["submodules/"],
+    "extra_args": ["--imp_metric", "outdoor"]
+  },
+  {"key": "speedy_splat", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs"},
+  {"key": "taming_3dgs", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs"},
+  {"key": "ghap", "entry_candidates": ["train_and_prune.py"], "official_metrics_style": "standard_3dgs"},
+  {"key": "dashgaussian", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs"},
+  {
+    "key": "fastgs",
+    "entry_candidates": ["train.py"],
+    "official_metrics_style": "standard_3dgs",
+    "module_aliases": [
+      {
+        "source": "diff_gaussian_rasterization_fastgs",
+        "target": "diff_gaussian_rasterization",
+        "submodules": ["_C"]
+      }
+    ]
+  },
+  {"key": "gof", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs"},
+  {
+    "key": "pgsr",
+    "entry_candidates": ["train.py"],
+    "official_metrics_style": "standard_3dgs",
+    "colmap_sparse_zero_fallback": true
+  },
+  {"key": "mip_splatting", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs"},
+  {"key": "scaffold_gs", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs", "static_help_only": true, "static_help_reason": "training entry downloads a 528 MB pretrained model during import"},
+  {
+    "key": "octree_gs",
+    "entry_candidates": ["train.py"],
+    "official_metrics_style": "standard_3dgs",
+    "framework_render_entry": "scripts/render_octree_gs.py",
+    "framework_render_contracts": [
+      {
+        "path": "gaussian_renderer/__init__.py",
+        "contains": ["def render(", "ape_code", "visibility_filter"]
+      },
+      {
+        "path": "scene/__init__.py",
+        "contains": ["class Scene"]
+      }
+    ],
+    "static_help_only": true,
+    "static_help_reason": "training entry downloads a 528 MB pretrained model during import"
+  },
+  {"key": "wavelet_gs", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs", "static_help_only": true, "static_help_reason": "training entry downloads a 528 MB pretrained model during import"},
+  {"key": "compact_3dgs", "entry_candidates": ["train.py"], "official_metrics_style": "standard_3dgs"},
+  {
+    "key": "3dcs",
+    "entry_candidates": ["train.py"],
+    "official_metrics_style": "standard_3dgs",
+    "official_backend": {
+      "python_env_var": "UNIFIED3DGS_3DCS_PYTHON",
+      "default_python": "envs/3dcs/bin/python",
+      "cuda_home": "envs/3dcs",
+      "requirements": {
+        "python": "3.11",
+        "torch": "2.4.0",
+        "torch_cuda": "12.1"
+      },
+      "source": "third_party/convex-splatting/requirements.yaml"
+    },
+    "extension_prefixes": ["official-backend-build-only"],
+    "training_extra_args": ["--quiet"],
+    "official_scene_args": {
+      "mip360/bicycle": ["--outdoor"],
+      "mip360/flowers": ["--outdoor"],
+      "mip360/garden": ["--outdoor"],
+      "mip360/stump": ["--outdoor"],
+      "mip360/treehill": ["--outdoor"],
+      "tandt/train": ["--outdoor"],
+      "tandt/truck": ["--outdoor"]
+    },
+    "static_help_only": true,
+    "static_help_reason": "official environment uses Python 3.11, PyTorch 2.4.0, and CUDA 12.x"
+  },
+  {
+    "key": "contextgs",
+    "entry_candidates": ["train.py"],
+    "framework_render_entry": "scripts/render_contextgs.py",
+    "framework_render_contracts": [
+      {"path": "test.py", "contains": ["def render_sets", "estimate_final_bits"]}
+    ],
+    "acceptance_resolution": 256,
+    "stop_after_verified_save": true,
+    "stop_after_verified_save_reason": "upstream automatically starts a full test-set render after saving the requested iteration; the framework runs its controlled render stage separately",
+    "static_help_only": true,
+    "static_help_reason": "training entry downloads a 528 MB pretrained model during import",
+    "external_extensions": [
+      {"path": "third_party/Scaffold-GS/submodules/diff-gaussian-rasterization", "modules": ["diff_gaussian_rasterization", "diff_gaussian_rasterization._C"]},
+      {"path": "third_party/Scaffold-GS/submodules/simple-knn", "modules": ["simple_knn", "simple_knn._C"]}
+    ]
+  },
+  {
+    "key": "hac_plus",
+    "entry_candidates": ["train.py"],
+    "official_backend": {
+      "python_env_var": "UNIFIED3DGS_HAC_PLUS_PYTHON",
+      "default_python": "envs/hac_plus/bin/python",
+      "cuda_home": "/usr/local/cuda-11.6",
+      "requirements": {
+        "python": "3.7.13",
+        "torch": "1.12.1",
+        "torch_cuda": "11.6"
+      },
+      "source": "third_party/HAC-plus/environment.yml"
+    },
+    "framework_render_entry": "scripts/render_hac_plus.py",
+    "framework_render_contracts": [
+      {"path": "train.py", "contains": ["def render_sets", "x_bound_min=x_bound_min"]},
+      {"path": "scene/gaussian_model.py", "contains": ["def update_anchor_bound", "def calc_interp_feat"]}
+    ],
+    "extra_args": [],
+    "official_dataset_args": {
+      "mip360": ["--lod", "0", "--voxel_size", "0.001", "--update_init_factor", "16", "--lmbda", "0.004", "--mask_lr_final", "0.0015"],
+      "tandt": ["--lod", "0", "--voxel_size", "0.01", "--update_init_factor", "16", "--lmbda", "0.004", "--mask_lr_final", "0.0004"],
+      "deep_blending": ["--lod", "0", "--voxel_size", "0.005", "--update_init_factor", "16", "--lmbda", "0.004", "--mask_lr_final", "0.00032"]
+    },
+    "training_extra_args": [],
+    "stop_after_verified_save": true,
+    "stop_after_verified_save_reason": "upstream automatically starts a full test-set render after saving iteration 1; the completeness test ends after the exact training result is stable",
+    "static_help_only": true,
+    "static_help_reason": "training entry downloads a 528 MB pretrained model during import",
+    "archived_extensions": [
+      {"archive": "submodules/diff-gaussian-rasterization.zip", "modules": ["diff_gaussian_rasterization", "diff_gaussian_rasterization._C"]},
+      {"archive": "submodules/gridencoder.zip", "modules": ["_gridencoder"]},
+      {"archive": "submodules/simple-knn.zip", "modules": ["simple_knn", "simple_knn._C"]},
+      {"archive": "submodules/arithmetic.zip", "modules": ["arithmetic"]}
+    ]
+  }
+]

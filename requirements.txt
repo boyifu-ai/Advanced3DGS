@@ -1,0 +1,14 @@
+PyYAML>=6.0
+numpy<2
+scipy
+pillow
+plyfile
+tqdm
+opencv-python-headless
+matplotlib
+imageio
+scikit-image
+lpips
+mediapy==1.1.2
+open3d-cpu==0.18.0
+trimesh==4.3.2

@@ -1,0 +1,27 @@
+method: sss
+third_party_repo: third_party/3D-student-splatting-and-scooping
+extension_path: third_party_build/sss/site-packages
+train_entry: train.py
+render_entry: render.py
+eval_entry: metrics.py
+
+dataset_path:
+output_path:
+iterations: 30000
+resolution: -1
+images: images
+test_iterations: -1
+render_iteration: 30000
+checkpoint_path:
+eval_split: test
+eval: true
+scene_config_dir: configs
+generated_scene_config_dir: outputs/validation/generated_configs/sss
+allow_upstream_scene_config: false
+render_skip_train: true
+device: cuda
+seed: 0
+
+cuda_home: /usr/local/cuda-11.8
+torch_cuda_arch_list: "8.6"
+max_jobs: 8

@@ -1,0 +1,72 @@
+[submodule "third_party/gaussian-splatting"]
+	path = third_party/gaussian-splatting
+	url = https://github.com/graphdeco-inria/gaussian-splatting.git
+[submodule "third_party/2d-gaussian-splatting"]
+	path = third_party/2d-gaussian-splatting
+	url = https://github.com/hbb1/2d-gaussian-splatting.git
+[submodule "third_party/3dgs-mcmc"]
+	path = third_party/3dgs-mcmc
+	url = https://github.com/ubc-vision/3dgs-mcmc.git
+[submodule "third_party/3DHGS"]
+	path = third_party/3DHGS
+	url = https://github.com/lihaolin88/3DHGS.git
+[submodule "third_party/3D-student-splatting-and-scooping"]
+	path = third_party/3D-student-splatting-and-scooping
+	url = https://github.com/realcrane/3D-student-splatting-and-scooping.git
+[submodule "third_party/ges-splatting"]
+	path = third_party/ges-splatting
+	url = https://github.com/ajhamdi/ges-splatting.git
+[submodule "third_party/Beta-Splatting"]
+	path = third_party/Beta-Splatting
+	url = https://github.com/RongLiu-Leo/Beta-Splatting.git
+[submodule "third_party/LightGaussian"]
+	path = third_party/LightGaussian
+	url = https://github.com/VITA-Group/LightGaussian.git
+[submodule "third_party/mini-splatting"]
+	path = third_party/mini-splatting
+	url = https://github.com/fatPeter/mini-splatting.git
+[submodule "third_party/speedy-splat"]
+	path = third_party/speedy-splat
+	url = https://github.com/j-alex-hanson/speedy-splat.git
+[submodule "third_party/taming-3dgs"]
+	path = third_party/taming-3dgs
+	url = https://github.com/humansensinglab/taming-3dgs.git
+[submodule "third_party/GHAP"]
+	path = third_party/GHAP
+	url = https://github.com/taowang0105/GHAP.git
+[submodule "third_party/DashGaussian"]
+	path = third_party/DashGaussian
+	url = https://github.com/YouyuChen0207/DashGaussian.git
+[submodule "third_party/FastGS"]
+	path = third_party/FastGS
+	url = https://github.com/fastgs/FastGS.git
+[submodule "third_party/gaussian-opacity-fields"]
+	path = third_party/gaussian-opacity-fields
+	url = https://github.com/autonomousvision/gaussian-opacity-fields.git
+[submodule "third_party/PGSR"]
+	path = third_party/PGSR
+	url = https://github.com/zju3dv/PGSR.git
+[submodule "third_party/mip-splatting"]
+	path = third_party/mip-splatting
+	url = https://github.com/autonomousvision/mip-splatting.git
+[submodule "third_party/Scaffold-GS"]
+	path = third_party/Scaffold-GS
+	url = https://github.com/city-super/Scaffold-GS.git
+[submodule "third_party/Octree-GS"]
+	path = third_party/Octree-GS
+	url = https://github.com/city-super/Octree-GS.git
+[submodule "third_party/Wavelet-GS"]
+	path = third_party/Wavelet-GS
+	url = https://github.com/ALEX5874/Wavelet-GS.git
+[submodule "third_party/Compact-3DGS"]
+	path = third_party/Compact-3DGS
+	url = https://github.com/maincold2/Compact-3DGS.git
+[submodule "third_party/convex-splatting"]
+	path = third_party/convex-splatting
+	url = https://github.com/convexsplatting/convex-splatting.git
+[submodule "third_party/ContextGS"]
+	path = third_party/ContextGS
+	url = https://github.com/wyf0912/ContextGS.git
+[submodule "third_party/HAC-plus"]
+	path = third_party/HAC-plus
+	url = https://github.com/YihangChen-ee/HAC-plus.git

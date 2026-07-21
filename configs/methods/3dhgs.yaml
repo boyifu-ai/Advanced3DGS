@@ -1,0 +1,23 @@
+method: 3dhgs
+third_party_repo: third_party/3DHGS
+extension_path: third_party_build/3dhgs/site-packages
+train_entry: train.py
+render_entry: render.py
+eval_entry: metrics.py
+
+dataset_path:
+output_path:
+iterations: 30000
+resolution: -1
+images: images
+test_iterations: -1
+render_iteration: 30000
+checkpoint_path:
+eval_split: test
+eval: true
+device: cuda
+seed: 0
+
+cuda_home: /usr/local/cuda-11.8
+torch_cuda_arch_list: "8.6"
+max_jobs: 8
